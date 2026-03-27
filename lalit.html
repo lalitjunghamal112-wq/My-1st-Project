@@ -4,61 +4,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Page</title>
+<link rel="stylesheet" href="lalit.css">
 </head>
+
 <body>
-<style>
-    table, th, td {
-      border:4px solid black;
-    }
-    </style>
-<body>
+  
 <header>
-<a class="showNav" href="#"></a>
-  <nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Contact</a>
+<nav class="navigator">
+  <button class="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="navigator-links">
+
+    <li>
+      <a href="#home">Home</a>
+      <ul class="dropdown">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#qualification">Qualification</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#projects">Projects</a>
+      <ul class="dropdown">
+        <li><a href="#frontend">Front-End Projects</a></li>
+        <li><a href="#backend">Back-End Projects</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+      <ul class="dropdown">
+        <li><a href="#email">Email</a></li>
+        <li><a href="#facebook">Facebook</a></li>
+        <li><a href="#github">GitHub</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#demo">Demo</a>
+      <ul class="dropdown">
+        <li><a href="#demo-video">Demo Video</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#report">Report</a>
+      <ul class="dropdown">
+        <li><a href="#published">Published Reports</a></li>
+      </ul>
+    </li>
+
+  </ul>
 </nav>
 </header>
-              <h1> Introduction </h1>
-              
-              <main>
-                  <p>Welcome to our website</p>
-                    <a href="#">See our new product launch</a>
-                      </main>
-                        <div class="itemOne">
-                          <h1> Qualfication</h1>
-                          <p>I have completed my high school from Grokha Secondary School</p>
-                        </div>
-                          <div class="itemTwo">
-                                <h1>Current Degree</h1>
-                                <p>Studying Bacelor of Business Computing in The University of Northampton</p>
-                          </div>
 
-                            <h2>A basic HTML table</h2>
+<main>
+<div class="container">
+  <img src="html1.png" alt="Lalit Jung Hamal" />
+  <div class="bio">
+    <h2>Lalit Jung Hamal</h2>
+    <p>Welcome to My Portfolio!</p>
+  <p>Discover my work, skills, and passions through this portfolio website.</p>
+    <a class="mt-5 inline-block rounded-md bg-cyan-400 px-6 py-3 text-sm font-bold text-black" href="#">Connect with me</a>
+  </div>
+</div>
+
+  <h2>Home</h2>
+
+<section id="introduction">
+  <h2>Introduction</h2>
+  <p>Hello! My name is Lalit Jung Hamal. I am 19 years old, originally from Nepal, and currently living in Northampton, UK.
+  I graduated high school in 2023 from Gorkha Secondary School with a major in Computer Science under the Management faculty.
+  I am currently pursuing my Bachelor's degree in Business Computing at the University of Northampton.</p>
+</section>
+
+<section id="qualification">
+  <h2>Qualification</h2>
+  <ul>
+    <li>Completed Secondary School from Divine Temple Academy with 3.05 GPA</li>
+    <li>Completed High School from Gorkha Secondary School with 3.43 GPA</li>
+    <li>Completed remote internship at Exceleerate as a Business Consultant and Data Analyst</li>
+    <li>Volunteered as a thinker in the Biruwa Project</li>
+  </ul>
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <ul>
+    <li>Reading Books</li>
+    <li>Watching Movies</li>
+    <li>Traveling</li>
+    <li>Playing Cricket, Football, and Chess</li>
+    <li>Hiking</li>
+  </ul>
+</section>
+
+<section class="ProjectPage" id="projects">
+  <h2>Projects</h2>
+
+  <section id="frontend">
+    <h3>Front-End Projects</h3>
+    <p>As my first front-end project, I created a sports event form using HTML during high school.</p>
+  </section>
+
+  <section id="backend">
+    <h3>Back-End Projects</h3>
+    <p>My first back-end project was developed in college, where I created an online bookstore.</p>
+  </section>
 
 
-                            <table style="width:100%">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country Name</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-                            </table>
-                                <p><marquee>To understand the example better, we have added borders to the table.</marquee></p>
-                              <link rel="stylesheet" href="lalit.css">
-                              <h1>Page Heading</h1>
-                              <p>Content</p>
+<section class="ContactPage" id="contact">
+  <h2>Contact</h2>
+
+  <section id="email">
+    <h3>Email</h3>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="facebook">
+    <h3>Facebook</h3>
+    <form class="fb-form">
+      <input type="text" placeholder="Your Facebook ID Name" required>
+      <textarea placeholder="Message..."></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="github">
+    <h3>GitHub</h3>
+    <a href="https://github.com/lalitjunghamal112-wq" target="_blank" class="github-btn">
+     View My GitHub
+    </a>
+  </section>
+</section>
+
+<section class="DemoPage" id="demo">
+  <h2>Demo Video</h2>
+</section>
+
+<section class="ReportPage" id="report">
+  <h2> Reflective Report on my portfolio website project</h2>
+  <p>
+Honestly, when I first started this module, I had no real idea how websites were actually built. I’d used websites every day, but coding one myself felt completely new and a bit overwhelming. At the start, even writing basic HTML felt confusing, especially trying to remember tags and how everything fits together.
+As I worked on my portfolio project, things slowly started to make more sense. One of the best moments was when I turned a plain HTML page into something that actually looked like a real website using CSS. That was a big confidence boost. I started experimenting with colours, layouts, and fonts, and it was interesting to see how small design choices could completely change the feel of the site.
+I decided to keep my portfolio simple and clean because I wanted it to be easy to use. I didn’t want too many colours or distractions, so I stuck to a basic colour scheme and readable fonts. I was inspired by modern portfolio websites that look minimal but still professional, and I tried to recreate that style in my own way.
+Not everything went smoothly though. Debugging was probably the most frustrating part. There were times when my code just didn’t work, and I had no idea why. Most of the time it turned out to be something small, like a missing bracket or a typo, which was annoying but also taught me to pay attention to detail. Using validation tools really helped me spot those mistakes.
+Looking back, my website improved a lot over time. It started off very basic, but by the end, it felt like a proper portfolio that I could actually show someone. Overall, this module helped me build confidence in coding and made me realise that web development is something you learn step by step through practice and mistakes.</p>
+</section>
+
+</main>
+ 
+<footer>
+  <p>Lalit © 2026</p>
+</footer>
+
 </body>
 </html>
